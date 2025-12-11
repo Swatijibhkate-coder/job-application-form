@@ -16,8 +16,7 @@ const JobApplicationForm: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = () => {
 
     if (!candidateName) return alert("Candidate Name is required");
     if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))
